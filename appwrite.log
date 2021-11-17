@@ -1,0 +1,38 @@
+appwrite  | execute init_file success
+appwrite  | [33m[yasd] Connect IDE failed (Connection refused), please check that the IDE is in a listening state[0m
+appwrite  | [Static Files] Loadded 221 files
+appwrite  | [32mWorker 1 started successfully[0m
+appwrite  | [32mWorker 2 started successfully[0m
+appwrite  | [32mWorker 3 started successfully[0m
+appwrite  | [32mWorker 4 started successfully[0m
+appwrite  | [32mWorker 5 started successfully[0m
+appwrite  | [32mWorker 6 started successfully[0m
+appwrite  | [32mWorker 7 started successfully[0m
+appwrite  | [32mWorker 8 started successfully[0m
+appwrite  | [32mWorker 9 started successfully[0m
+appwrite  | [32mWorker 10 started successfully[0m
+appwrite  | [32mWorker 11 started successfully[0m
+appwrite  | [32mWorker 12 started successfully[0m
+appwrite  | [32mWorker 13 started successfully[0m
+appwrite  | [32mWorker 14 started successfully[0m
+appwrite  | [32mWorker 15 started successfully[0m
+appwrite  | [32mWorker 16 started successfully[0m
+appwrite  | [32mWorker 17 started successfully[0m
+appwrite  | [32mWorker 18 started successfully[0m
+appwrite  | [32mWorker 19 started successfully[0m
+appwrite  | [32mWorker 20 started successfully[0m
+appwrite  | [32mWorker 21 started successfully[0m
+appwrite  | [32mWorker 22 started successfully[0m
+appwrite  | [32mWorker 23 started successfully[0m
+appwrite  | [32mWorker 24 started successfully[0m
+appwrite  | [32mServer started successfully (max payload is 6,291,456 bytes)[0m
+appwrite  | [34mMaster pid 1, manager pid 7[0m
+appwrite  | [1;33mlocalhost is not a publicly accessible domain. Skipping SSL certificate generation.[0m
+appwrite  | [1;33mlocalhost is not a publicly accessible domain. Skipping SSL certificate generation.[0m
+appwrite  | [31m[Error] Timestamp: 2021-11-16T09:13:39+00:00[0m
+appwrite  | [31m[Error] Method: GET[0m
+appwrite  | [31m[Error] URL: /v1/storage/buckets/:bucketId/files/:fileId/preview[0m
+appwrite  | [31m[Error] Type: Utopia\Exception[0m
+appwrite  | [31m[Error] Message: File not found[0m
+appwrite  | [31m[Error] File: /usr/src/code/app/controllers/api/storage.php[0m
+appwrite  | [31m[Error] Line: 1073[0m
