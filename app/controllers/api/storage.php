@@ -544,7 +544,7 @@ App::post('/v1/storage/buckets/:bucketId/files')
 
         $bucket = $dbForInternal->getDocument('buckets', $bucketId);
 
-        if ($bucket->isEmpty()) {
+        if($bucket->isEmpty() || !$bucket->getAttribute('enabled')) {
             throw new Exception('Bucket not found', 404);
         }
 
@@ -852,7 +852,7 @@ App::get('/v1/storage/buckets/:bucketId/files')
 
         $bucket = $dbForInternal->getDocument('buckets', $bucketId);
 
-        if ($bucket->isEmpty()) {
+        if($bucket->isEmpty() || !$bucket->getAttribute('enabled')) {
             throw new Exception('Bucket not found', 404);
         }
 
@@ -935,7 +935,7 @@ App::get('/v1/storage/buckets/:bucketId/files/:fileId')
 
         $bucket = $dbForInternal->getDocument('buckets', $bucketId);
 
-        if ($bucket->isEmpty()) {
+        if($bucket->isEmpty() || !$bucket->getAttribute('enabled')) {
             throw new Exception('Bucket not found', 404);
         }
 
@@ -1014,7 +1014,7 @@ App::get('/v1/storage/buckets/:bucketId/files/:fileId/preview')
         }
         $bucket = $dbForInternal->getDocument('buckets', $bucketId);
 
-        if ($bucket->isEmpty()) {
+        if($bucket->isEmpty() || !$bucket->getAttribute('enabled')) {
             throw new Exception('Bucket not found', 404);
         }
 
@@ -1176,7 +1176,7 @@ App::get('/v1/storage/buckets/:bucketId/files/:fileId/download')
 
         $bucket = $dbForInternal->getDocument('buckets', $bucketId);
 
-        if ($bucket->isEmpty()) {
+        if($bucket->isEmpty() || !$bucket->getAttribute('enabled')) {
             throw new Exception('Bucket not found', 404);
         }
 
@@ -1312,7 +1312,7 @@ App::get('/v1/storage/buckets/:bucketId/files/:fileId/view')
 
         $bucket = $dbForInternal->getDocument('buckets', $bucketId);
 
-        if ($bucket->isEmpty()) {
+        if($bucket->isEmpty() || !$bucket->getAttribute('enabled')) {
             throw new Exception('Bucket not found', 404);
         }
 
@@ -1464,7 +1464,7 @@ App::put('/v1/storage/buckets/:bucketId/files/:fileId')
 
         $bucket = $dbForInternal->getDocument('buckets', $bucketId);
 
-        if ($bucket->isEmpty()) {
+        if($bucket->isEmpty() || !$bucket->getAttribute('enabled')) {
             throw new Exception('Bucket not found', 404);
         }
 
@@ -1545,7 +1545,7 @@ App::delete('/v1/storage/buckets/:bucketId/files/:fileId')
         
         $bucket = $dbForInternal->getDocument('buckets', $bucketId);
 
-        if ($bucket->isEmpty()) {
+        if($bucket->isEmpty() || !$bucket->getAttribute('enabled')) {
             throw new Exception('Bucket not found', 404);
         }
 
